@@ -1,0 +1,61 @@
+Output Results Home Work 1 
+
+Part 1 : 
+
+585     choekenneth
+600     fontenotyvette
+639     borziphyllis
+666     davisjonathan
+672     livingstoncatherine
+717     levitisjason
+726     morrisonhelen
+750     hoffjames
+774     tavennermarilyn
+1002    hashmichael
+
+
+Part 2 : 
+
+7158    duboisjoshua
+7182    nelsongreg
+7926    matusiakari
+8007    kellylauren
+8805    monteiropaul
+9003    tubmansamantha
+10779   carsonjon
+21816   lambrewjeanne
+24486   liermankyle
+1391859 officevisitors
+
+
+Part 3 : 
+
+471     choekenneth lambrewjeanne
+474     levitisjason lambrewjeanne
+489     morrisonhelen lambrewjeanne
+495     livingstoncatherine lambrewjeanne
+528     fontenotyvette lambrewjeanne
+534     hoffjames hoffjoanne
+594     brookslasurechiquita lambrewjeanne
+597     larsensteven lambrewjeanne
+624     tavennermarilyn lambrewjeanne
+774     hashmichael lambrewjeanne
+
+
+Part 4 : 
+
+1       44224.0
+11      97695.0
+12      221715.0
+2       46275.0
+3       84217.0
+4       94999.0
+5       96657.0
+6       105429.0
+7       87097.0
+8       101015.0
+9       58057.0
+
+
+
+
