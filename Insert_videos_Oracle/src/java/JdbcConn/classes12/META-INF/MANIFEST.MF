@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Specification-Title:    Oracle JDBC driver classes for use with JDK12
+Sealed: true
+Created-By: 1.4.2_08 (Sun Microsystems Inc.)
+Implementation-Title:   classes12.jar
+Specification-Vendor:   Oracle Corporation
+Specification-Version:  Oracle JDBC Driver version - "10.2.0.1.0"
+Implementation-Version: Oracle JDBC Driver version - "10.2.0.1.0"
+Implementation-Vendor:  Oracle Corporation
+Implementation-Time:    Wed Jun 22 11:17:12 2005
+
+Name: javax/sql/
+Sealed: false
+
+Name: oracle/sql/converter/
+Sealed: false
+
+Name: oracle/sql/
+Sealed: false
+
+Name: oracle/sql/converter_xcharset/
+Sealed: false
+

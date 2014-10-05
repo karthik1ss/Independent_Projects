@@ -1,0 +1,35 @@
+<!DOCTYPE validators PUBLIC
+"-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+
+<validators>
+    <field name="oldpassword">
+        <field-validator type="required">
+            <message key="errors.required.password" />
+        </field-validator>
+        <field-validator type="stringLength">
+            <param name="minLength">6</param>
+            <param name="maxLength">30</param>
+            <message key="errors.stringLength.password" />
+        </field-validator>
+    </field>
+
+    <field name="newpassword">
+        <field-validator type="required">
+            <message key="errors.required.password" />
+        </field-validator>
+        <field-validator type="stringLength">
+            <param name="minLength">6</param>
+            <param name="maxLength">30</param>
+            <message key="errors.stringLength.password" />
+        </field-validator>
+    </field>
+
+    <field name="confirmpassword">
+         <field-validator type="fieldexpression" >
+         <param name="expression">confirmpassword.equals('newpassword')</param>
+                 <message key="errors.fieldexpression.repass" />
+         </field-validator>
+    </field>
+
+</validators>

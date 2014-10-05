@@ -1,0 +1,226 @@
+
+form {
+    margin: 0;
+    padding: 0;
+}
+/* Basic page styling */
+body {
+    padding: 0;
+    margin: 20px;
+    color: #000;
+    background: #fff;
+    font: 12px arial,verdana,sans-serif;
+    text-align: center;
+}
+h3 {
+    font-size: 1.5em;
+}
+.remember {
+    font-size : 11px; 
+    color : #000000; 
+    font-weight: normal;
+    font-family : Verdana, Arial, Helvetica, sans-serif; 
+    text-decoration : none; 
+}
+.fspan {
+    font-size : 12px; 
+    color : #000000; 
+    font-weight: normal;
+    font-family : arial,verdana,sans-serif;
+    text-decoration : none; 
+}
+.art {
+    font-size : 12px; 
+    color : #000000; 
+    font-weight: normal;
+    font-family : Arial, Verdana, Helvetica, sans-serif; 
+    text-decoration : none; 
+}
+.uexist:link {
+    font-size : 10px; 
+    font-weight : normal; 
+    color : #0058b0; 
+    font-family : verdana, arial, helvetica, sans-serif;
+    text-decoration : underline; 
+} 
+.uexist:visited {
+    font-size : 10px; 
+    font-weight : normal; 
+    color : #0058b0; 
+    font-family : verdana, arial, helvetica, sans-serif;
+    text-decoration : underline; 
+} 
+.uexist:hover {
+    font-size : 10px; 
+    font-weight : normal; 
+    color : #ff0000; 
+    font-family : verdana, arial, helvetica, sans-serif;
+    text-decoration : none; 
+}
+#container {
+    margin: 0 auto;
+    padding: 1em;
+    width: 350px;
+    text-align: left;
+}
+p#optreqlink {
+    margin: 0;
+    text-align: center;
+}
+.textbox {
+    width: 160px;
+    border-left : 1px solid #acc6db; 
+    border-right : 1px solid #acc6db; 
+    border-top : 1px solid #acc6db; 
+    border-bottom : 1px solid #acc6db; 
+    background-color : #fff; 
+    font-size : 12px;
+    font-family : Verdana, Arial, Helvetica, sans-serif; 
+    color : #000; 
+}
+.ers
+{
+	position: absolute;
+	left: 300px;
+}
+.textbox2 {
+    border-left : 1px solid #acc6db; 
+    border-right : 1px solid #acc6db; 
+    border-top : 1px solid #acc6db; 
+    border-bottom : 1px solid #acc6db; 
+    background-color : #fff; 
+    font-size : 12px;
+    font-family : Verdana, Arial, Helvetica, sans-serif; 
+    color : #000; 
+} 
+.textcom {
+    border-left : 1px solid #acc6db; 
+    border-right : 1px solid #acc6db; 
+    border-top : 1px solid #acc6db; 
+    border-bottom : 1px solid #acc6db; 
+    background-color : #fff; 
+    font-size : 12px;
+    font-family : Verdana, Arial, Helvetica, sans-serif; 
+    color : #000; 
+} 
+.cselect {
+    width: 163px;
+    background-color : #fff; 
+    font-size : 11px; 
+    font-weight: normal;
+    color : #000; 
+    font-family : Verdana, arial, helvetica, sans-serif; 
+    text-decoration : none; 
+}
+fieldset {
+    margin: 1em 0;
+    border: none;
+    border-top: 1px solid #acc6db;
+}
+legend {
+    margin: 1em 0;
+    padding: 0 .3em;
+    color: #3975B0;
+    background: transparent;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+label {
+    float: left;
+    width: 100px;
+    padding: 0 1em;
+    text-align: right;
+}
+fieldset div {
+    margin-bottom: .5em;
+    padding: 0;
+    display: block;
+}
+div.newsletter div {
+    margin: 5px 0;
+}
+div.newsletter input {
+    width: 1em;
+}
+div.newsletter label {
+    display: block;
+    width: 200px;
+    padding-left: 5em;
+    text-align: left;
+}
+.submit {
+    color : #fff; 
+    font-family : verdana, arial, helvetica, sans-serif; 
+    font-size : 8pt; 
+    font-weight : bold; 
+    background-color : #6898D0; 
+    border : 1px solid #dadada; 
+    cursor : pointer; 
+}
+#butdiv {
+    clear: both;
+    padding-top: 1em;
+    text-align: center;
+}
+/* CSS for popup hint tooltip box */
+#hinttooltip {
+    position: absolute;
+    left: -300px;
+    width: 150px;
+    border:1px solid #AACFEA;
+    border-right: 3px solid #AACFEA;
+    border-bottom: 3px solid #AACFEA;
+    padding: 3px;
+    text-align: left;
+    background-color: #EAF7FB;
+    visibility: hidden;
+    z-index: 100;
+}
+#hintpointer {
+    position:absolute;
+    left: -300px;
+    z-index: 101;
+    visibility: hidden;
+}
+/* This is the hacking and geeking part */
+/* required fields - does not work in IE */
+fieldset div.reqfield {
+    font-weight: bold;
+}
+fieldset div.reqfield label:before {
+    content: "* "; /* does not work in IE */
+}
+div.row input.file { /* main upload field */
+	position: relative;
+	display: block;
+	z-index: 2;
+	float: left;
+	left: -150px;
+	cursor: pointer;
+	margin-right: 5px;
+	-moz-opacity: 0;
+	
+}
+ 
+input#dFldGhost { /* fake upload field */
+	height: 24px;
+	border: 1px solid #cccccc;
+	background-color: #ffffff;
+	z-index: 2;
+	float: left;
+}
+ 
+div.dFldGhostContainer input#dFldGhost, div.dFldGhostContainer div.btn {
+	position: absolute;
+	display: block;
+	float: left;
+}
+ 
+div.dFldGhostContainer div.btn {
+	float: left;
+	z-index: 1;
+	width: 10px;
+	left: 4px;
+	position: absolute;
+}
+

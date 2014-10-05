@@ -1,0 +1,45 @@
+<!DOCTYPE validators PUBLIC
+"-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+
+<validators>
+    
+    <field name="login.username">
+        <field-validator type="required">
+            <message key="errors.required.username" />
+        </field-validator>
+        <field-validator type="stringLength">
+            <param name="minLength">6</param>
+            <param name="maxLength">12</param>
+            <message key="errors.stringLength.username" />
+        </field-validator>
+    </field>
+
+    <field name="login.password">
+        <field-validator type="required">
+            <message key="errors.required.password" />
+        </field-validator>
+        <field-validator type="stringLength">
+            <param name="minLength">6</param>
+            <param name="maxLength">30</param>
+            <message key="errors.stringLength.password" />
+        </field-validator>
+    </field>
+
+    <field name="repass">
+         <field-validator type="fieldexpression" >
+         <param name="expression">repass.equals('login.password')</param>
+                 <message key="errors.fieldexpression.repass" />
+         </field-validator>
+    </field>
+
+    <field name="login.email">
+        <field-validator type="email">
+            <message key="errors.email.email" />
+        </field-validator>
+        <field-validator type="required">
+            <message key="errors.required.email" />
+        </field-validator>
+    </field>
+    
+</validators>

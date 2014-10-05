@@ -1,0 +1,50 @@
+<!DOCTYPE validators PUBLIC
+"-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+
+<validators>
+    
+    <field name="user.name">
+        <field-validator type="required">
+            <message key="errors.required.name" />
+        </field-validator>
+    </field>
+
+    <field name="user.age">
+        <field-validator type="required">
+            <message key="errors.required.age" />
+        </field-validator>
+    </field>
+
+    <field name="user.sex">
+        <field-validator type="fieldexpression">
+        <param name="expression"><![CDATA[(checkBox !=true && user.sex!=null) or (checkBox==true && user.sex==null)]]></param>
+        <message key="errors.required.gender"/>
+        </field-validator>
+    </field>
+
+    <field name="address">
+        <field-validator type="required">
+            <message key="errors.required.address" />
+        </field-validator>
+    </field>
+
+    <field name="city">
+        <field-validator type="required">
+            <message key="errors.required.city" />
+        </field-validator>
+    </field>
+
+    <field name="country">
+        <field-validator type="required">
+            <message key="errors.required.country" />
+        </field-validator>
+    </field>
+
+    <field name="zipcode">
+        <field-validator type="required">
+            <message key="errors.required.zipcode" />
+        </field-validator>
+    </field>
+
+</validators>
